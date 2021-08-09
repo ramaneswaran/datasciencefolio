@@ -45,15 +45,15 @@ class Projects extends Component {
             {projectcards.list.map((proj) => {
               return (
                 <Card className="h-100">
-                  <Card.Img
+                  {/* <Card.Img
                     variant="top"
                     src={require(`../../assets/projects/${proj.img_path}`)}
-                  />
+                  /> */}
                   <Card.Body>
                     <Card.Title>
                       <h2 style={{ lineHeight: "1.5", marginTop: "0" }}>
                         {proj.title}
-                        <a
+                        {/* <a
                           style={{ color: theme.text }}
                           href={proj.link}
                           target="_blank"
@@ -66,7 +66,7 @@ class Projects extends Component {
                               marginLeft: "10px",
                             }}
                           ></i>
-                        </a>
+                        </a> */}
                         <a
                           style={{ color: theme.text }}
                           href={proj.code}
@@ -112,7 +112,7 @@ class Projects extends Component {
         <Button
           text={"More Projects"}
           className="project-button"
-          href="https://github.com/rohankokkula"
+          href="https://github.com/ramaneswaran"
           newTab={true}
           theme={theme}
         />
